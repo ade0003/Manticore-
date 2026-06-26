@@ -66,58 +66,79 @@
 
 //}
 
-Status currentStatus = Status.locked;
+//Status currentStatus = Status.locked;
 
-while (true) {
+//while (true) {
 
-    Console.Write($"the chest is {currentStatus}, what would you like to do? " );
-    string action  = Console.ReadLine();
+//    Console.Write($"the chest is {currentStatus}, what would you like to do? " );
+//    string action  = Console.ReadLine();
 
-    if (currentStatus == Status.locked && action == "unlock")
-    {
+//    if (currentStatus == Status.locked && action == "unlock")
+//    {
 
-        currentStatus = Status.closed;
-    }
-    else if (currentStatus == Status.closed)
-    {
+//        currentStatus = Status.closed;
+//    }
+//    else if (currentStatus == Status.closed)
+//    {
 
-        if (action == "open")
-        {
+//        if (action == "open")
+//        {
 
-            currentStatus = Status.open;
-        }
-        else if (action == "lock")
-        {
-            currentStatus = Status.locked;
-        }
-        else
-        {
+//            currentStatus = Status.open;
+//        }
+//        else if (action == "lock")
+//        {
+//            currentStatus = Status.locked;
+//        }
+//        else
+//        {
 
-            Console.WriteLine("Invalid Action");
-        }
-    }
-    else if (currentStatus == Status.open && action == "close")
-    {
+//            Console.WriteLine("Invalid Action");
+//        }
+//    }
+//    else if (currentStatus == Status.open && action == "close")
+//    {
 
-        currentStatus = Status.closed;
+//        currentStatus = Status.closed;
 
-    }
+//    }
 
-    else {
+//    else {
 
-        Console.WriteLine("Invalid action");
-            }
+//        Console.WriteLine("Invalid action");
+//            }
 
-}
-
-
-enum Status { 
+//}
 
 
+//enum Status { 
 
-open, 
-closed, 
-locked
 
-}
 
+//open, 
+//closed, 
+//locked
+
+//}
+
+//int countDown(int number)
+//{
+
+//    Console.WriteLine(number);
+
+//    if (number == 0) { 
+//    return 0;
+//}
+//    else 
+//    { 
+//        return countDown(number - 1); }
+
+//}
+//countDown(10);
+
+
+(string Name, int Points, int Level)[] highScores = { 
+
+    (Name: "R2-D2", Points: 12420, Level: 15), 
+    ("C-3P0", 8543, 9), 
+    ("GONK", -1,1) };
